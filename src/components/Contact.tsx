@@ -17,14 +17,11 @@ const Contact: React.FC = () => {
     setStatus('idle');
 
     try {
-      // Service ID: service_ht356oi
-      // Public Key: 18xaqr9p1ZL0j2pan
-      // Template ID: template_s8apaqp
       await emailjs.sendForm(
-        'service_ht356oi', 
-        'template_s8apaqp', 
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, 
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, 
         formRef.current, 
-        '18xaqr9p1ZL0j2pan'
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
 
       setStatus('success');
