@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mafaz Siddiqua | Premium Creative Portfolio
 
-## Getting Started
+An Awwwards-level personal portfolio website designed with a focus on immersive interactions, high-end motion design, and a modern glassmorphism aesthetic. Built for performance and scalability using the latest web technologies.
 
-First, run the development server:
+## ✨ Key Features
 
+-   **Momentum Smooth Scrolling:** Integrated **Lenis** for buttery-smooth, weighted scrolling.
+-   **Physics-Based Experience:** Interactive **Matter.js** loading screen and draggable skills playground.
+-   **Advanced GSAP Motion:** Multi-layer parallax, scroll-triggered reveal animations, and 3D tilting project cards.
+-   **Interactive Magnet System:** Intelligent magnetic attraction on navigation links and primary call-to-actions.
+-   **High-End Visuals:** 
+    -   Animated **Mesh Gradient** background for depth.
+    -   **Filmic Grain** texture for a premium physical feel.
+    -   **Border Beam** light effects orbiting project cards.
+    -   **Velocity-Based Cursor:** Custom cursor that stretches and morphs based on movement speed.
+-   **Functional Contact Form:** Powered by **EmailJS** with real-time validation and custom HTML email templates.
+-   **Fully Responsive:** Pixel-perfect optimization across mobile, tablet, and ultra-wide screens.
+
+## 🛠️ Tech Stack
+
+-   **Framework:** [Next.js 15+](https://nextjs.org/) (App Router)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Animations:** [GSAP](https://greensock.com/gsap/) (ScrollTrigger, Flip, Observer)
+-   **Physics:** [Matter.js](https://brm.io/matter-js/)
+-   **Smooth Scroll:** [Lenis](https://lenis.darkroom.engineering/)
+-   **Email Service:** [EmailJS](https://www.emailjs.com/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+-   Node.js (v18.17 or later)
+-   npm, yarn, or pnpm
+
+### Installation
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/mafazsiddi/portfolio.git
+    cd portfolio
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Set up EmailJS (optional):
+    Replace the placeholders in `src/components/Contact.tsx` with your credentials from the [EmailJS Dashboard](https://dashboard.emailjs.com/).
+
+### Running Locally
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📦 Deployment
+
+### Vercel (Recommended)
+This project is optimized for Vercel. 
+1.  Push your code to GitHub.
+2.  Import the project in [Vercel Dashboard](https://vercel.com/new).
+3.  Vercel will handle the rest!
+
+## 📂 Project Structure
+
+```text
+src/
+├── app/             # App Router pages and global styles
+├── components/      # Reusable UI & Interactive sections
+├── lib/             # Utility functions (cn, etc.)
+└── public/          # Static assets and grain textures
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by **Mafaz Siddiqua**.
