@@ -141,7 +141,7 @@ const Experience: React.FC = () => {
               
               <div className="mt-8 md:mt-10 p-5 md:p-6 glass rounded-xl md:rounded-2xl border-white/5 bg-gradient-to-br from-accent-purple/10 to-transparent">
                 <p className="text-xs md:text-sm text-gray-400 italic leading-relaxed">
-                  "Working at Oro Media Lab has allowed me to bridge the gap between creative design and high-performance engineering."
+                  &quot;Working at Oro Media Lab has allowed me to bridge the gap between creative design and high-performance engineering.&quot;
                 </p>
               </div>
             </div>

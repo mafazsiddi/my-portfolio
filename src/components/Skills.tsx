@@ -1,17 +1,17 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import Matter from 'matter-js';
 
 const Skills: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  const skills = [
+  const skills = useMemo(() => [
     'JavaScript', 'React', 'Next.js', 'Tailwind', 'GSAP', 
     'Matter.js', 'TypeScript', 'Node.js', 'Python', 'PHP', 
     'Git', 'Docker', 'Figma', 'WordPress'
-  ];
+  ], []);
 
   useEffect(() => {
     if (!containerRef.current || !canvasRef.current) return;
@@ -61,13 +61,14 @@ const Skills: React.FC = () => {
           fillStyle: 'rgba(255, 255, 255, 0.03)',
           strokeStyle: 'rgba(255, 255, 255, 0.15)',
           lineWidth: 1,
+          // @ts-expect-error - Custom property for rendering text
           text: {
             content: skill,
             color: '#ffffff',
             size: isMobile ? 10 : 14,
             family: 'Geist Sans',
           }
-        } as any,
+        },
         restitution: 0.8,
         friction: 0.1,
       });
@@ -84,12 +85,13 @@ const Skills: React.FC = () => {
       context.textBaseline = 'middle';
 
       const bodies = Composite.allBodies(world);
-      bodies.forEach((body: any) => {
-        if (body.render && body.render.text) {
+      bodies.forEach((body) => {
+        const b = body as Matter.Body & { render: { text?: { content: string } } };
+        if (b.render && b.render.text) {
           context.save();
-          context.translate(body.position.x, body.position.y);
-          context.rotate(body.angle);
-          context.fillText(body.render.text.content, 0, 0);
+          context.translate(b.position.x, b.position.y);
+          context.rotate(b.angle);
+          context.fillText(b.render.text.content, 0, 0);
           context.restore();
         }
       });
@@ -119,7 +121,7 @@ const Skills: React.FC = () => {
       Render.stop(render);
       Runner.stop(runner);
     };
-  }, []);
+  }, [skills]);
 
   return (
     <section id="skills" className="py-20 md:py-32 container overflow-hidden">

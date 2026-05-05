@@ -47,13 +47,13 @@ const Contact: React.FC = () => {
           <div className="lg:w-1/2">
             <h2 className="text-accent-blue font-mono tracking-widest uppercase mb-4">Contact</h2>
             <h3 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter">
-              Let's build <br />
+              Let&apos;s build <br />
               <span className="text-gradient">something</span> amazing.
             </h3>
             
             <p className="text-gray-400 text-lg mb-12 max-w-md">
               Available for freelance projects and full-time opportunities. 
-              Let's connect and discuss how I can help you.
+              Let&apos;s connect and discuss how I can help you.
             </p>
 
             <div className="space-y-6">
@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
 
               {status === 'success' && (
                 <p className="text-green-400 text-sm text-center font-medium animate-bounce mt-4">
-                  Thank you! I'll get back to you soon.
+                  Thank you! I&apos;ll get back to you soon.
                 </p>
               )}
             </form>

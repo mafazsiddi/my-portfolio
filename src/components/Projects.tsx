@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import TiltedCard from './TiltedCard';
 import BorderBeam from './BorderBeam';

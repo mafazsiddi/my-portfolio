@@ -69,8 +69,8 @@ const CustomCursor: React.FC = () => {
     };
 
     // Label triggers
-    const handleHoverEnter = (e: any) => {
-      const target = e.currentTarget;
+    const handleHoverEnter = (e: Event) => {
+      const target = e.currentTarget as HTMLElement;
       const type = target.getAttribute('data-cursor');
       
       if (type) {
