@@ -9,12 +9,12 @@ const Projects: React.FC = () => {
   const projects = [
     // ... same projects array ...
     {
-      title: 'RetailFlow UI System',
-      category: 'UI System',
-      description: 'Modular UI system using Tailwind + JavaScript. Mobile-first and scalable design architecture.',
-      tags: ['React', 'Tailwind', 'Storybook'],
-      github: '#',
-      demo: '#',
+      title: 'HomePro',
+      category: 'Real Estate',
+      description: 'A modern property listing and home search experience with clean UI and responsive design.',
+      tags: ['React', 'Next.js', 'Vercel'],
+      github: 'https://github.com/mafazsiddi/HomePro',
+      demo: 'https://home-pro-six.vercel.app/',
     },
     {
       title: 'Smart Parking System',
@@ -39,6 +39,30 @@ const Projects: React.FC = () => {
       tags: ['OpenGL', 'C++', 'GLFW'],
       github: 'https://github.com/mafazsiddi/3D-Exotic-Bike',
       demo: '#',
+    },
+    {
+      title: 'Lumina',
+      category: 'Design System',
+      description: 'A polished design system with reusable UI components and accessible styling for modern interfaces.',
+      tags: ['React', 'Tailwind', 'Design System'],
+      github: 'https://github.com/mafazsiddi/Lumina',
+      demo: 'https://lumina-zeta-opal.vercel.app/',
+    },
+    {
+      title: 'Fyne Green',
+      category: 'Eco Web App',
+      description: 'Sustainable design-focused web experience highlighting eco-friendly practices and resources.',
+      tags: ['Next.js', 'Vercel', 'Responsive'],
+      github: 'https://github.com/mafazsiddi/Fyne-Green',
+      demo: 'https://fyne-green-weld.vercel.app/',
+    },
+    {
+      title: 'ClearTax Pipeline',
+      category: 'Automation',
+      description: 'Pipeline automation dashboard for tax workflows with clean UI and integrated deployment.',
+      tags: ['React', 'Automation', 'CI/CD'],
+      github: 'https://github.com/mafazsiddi/cleartax-pipeline',
+      demo: 'https://cleartax-pipeline.vercel.app/',
     },
   ];
 
