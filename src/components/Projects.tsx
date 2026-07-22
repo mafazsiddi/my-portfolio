@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
       demo: 'https://fyne-green-weld.vercel.app/',
     },
     {
-      title: 'ClearTax Pipeline',
+      title: 'Mira',
       category: 'Automation',
       description: 'Pipeline automation dashboard for tax workflows with clean UI and integrated deployment.',
       tags: ['React', 'Automation', 'CI/CD'],

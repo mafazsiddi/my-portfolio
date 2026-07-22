@@ -25,6 +25,14 @@ const Navbar: React.FC = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (href: string) => {
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <>
       <nav 
@@ -40,12 +48,13 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <Magnet key={link.name} strength={10} range={0.8}>
-                <a 
-                  href={link.href}
+                <button
+                  type="button"
+                  onClick={() => handleNavClick(link.href)}
                   className="text-[10px] xl:text-xs uppercase tracking-widest font-bold text-gray-400 hover:text-white transition-colors px-2 py-1"
                 >
                   {link.name}
-                </a>
+                </button>
               </Magnet>
             ))}
           </div>
@@ -76,14 +85,14 @@ const Navbar: React.FC = () => {
         }`}>
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a 
+              <button 
                 key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-xs uppercase tracking-widest font-bold text-gray-400 hover:text-white transition-colors py-2 border-b border-white/5"
+                type="button"
+                onClick={() => handleNavClick(link.href)}
+                className="text-xs uppercase tracking-widest font-bold text-gray-400 hover:text-white transition-colors py-2 border-b border-white/5 text-left"
               >
                 {link.name}
-              </a>
+              </button>
             ))}
           </div>
         </div>
