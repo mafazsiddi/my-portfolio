@@ -61,12 +61,13 @@ const Navbar: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <Magnet strength={15} range={0.8}>
-              <a 
-                href="#contact" 
+              <button
+                type="button"
+                onClick={() => handleNavClick('#contact')}
                 className="bg-white text-black text-[9px] md:text-[10px] font-bold uppercase tracking-widest px-4 md:px-6 py-2 md:py-2.5 rounded-full hover:bg-accent-blue hover:text-white transition-all whitespace-nowrap"
               >
                 Hire Me
-              </a>
+              </button>
             </Magnet>
             
             {/* Mobile Menu Toggle */}
