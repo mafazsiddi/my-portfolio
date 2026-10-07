@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
             <div className="space-y-6">
               <div className="flex gap-4 pt-4">
               <a href="mailto:siddiquamafaz@gmail.com" className="flex items-center gap-4 group">
-                <div className="w-14 h-14 rounded-full glass flex items-center justify-center group-hover:bg-accent-blue transition-all">
-                  <Mail className="w-6 h-6 text-white" />
+                <div className="w-14 h-14 rounded-full glass flex items-center justify-center hover:scale-110 transition-transform hover:bg-white/10">
+                  <Mail className="w-6 h-6" />
                 </div>
               </a>
                 <a 
