@@ -47,27 +47,22 @@ const Contact: React.FC = () => {
           <div className="lg:w-1/2">
             <h2 className="text-accent-blue font-mono tracking-widest uppercase mb-4">Contact</h2>
             <h3 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter">
-              Let&apos;s build <br />
-              <span className="text-gradient">something</span> amazing.
+              Let&apos;s build 
+              <span className="text-gradient"> something</span> amazing.
             </h3>
             
-            <p className="text-gray-400 text-lg mb-12 max-w-md">
+            <p className="text-gray-400 text-lg max-w-md">
               Available for freelance projects and full-time opportunities. 
               Let&apos;s connect and discuss how I can help you.
             </p>
 
             <div className="space-y-6">
+              <div className="flex gap-4 pt-4">
               <a href="mailto:siddiquamafaz@gmail.com" className="flex items-center gap-4 group">
-                <div className="w-12 h-12 rounded-full glass flex items-center justify-center group-hover:bg-accent-blue transition-all">
-                  <Mail className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-gray-500 text-xs uppercase tracking-widest">Email Me</p>
-                  <p className="text-xl font-bold">siddiquamafaz@gmail.com</p>
+                <div className="w-14 h-14 rounded-full glass flex items-center justify-center group-hover:bg-accent-blue transition-all">
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
               </a>
-
-              <div className="flex gap-4 pt-4">
                 <a 
                   href="https://github.com/mafazsiddi" 
                   target="_blank" 

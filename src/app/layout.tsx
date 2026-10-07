@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mafaz Siddiqua | Frontend Developer",
-  description: "Portfolio of Mafaz Siddiqua, a creative Frontend Developer based in Bengaluru, India.",
+  title: "Mafaz Siddiqua | Full-Stack Developer",
+  description: "Portfolio of Mafaz Siddiqua, a Full-Stack Developer based in Bengaluru, India, building web applications with React, Next.js, and Express.js.",
   icons: {
     icon: "/favicon.svg",
   },

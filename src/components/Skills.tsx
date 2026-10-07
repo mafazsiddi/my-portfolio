@@ -8,9 +8,10 @@ const Skills: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const skills = useMemo(() => [
-    'JavaScript', 'React', 'Next.js', 'Tailwind', 'GSAP', 
-    'Matter.js', 'TypeScript', 'Node.js', 'Python', 'PHP', 
-    'Git', 'Docker', 'Figma', 'WordPress'
+    'JavaScript', 'React.js', 'Next.js', 'Vite', 'Tailwind CSS', 'GSAP',
+    'Express.js', 'REST APIs', 'PostgreSQL', 'MySQL', 'Drizzle ORM',
+    'PHP', 'Python', 'Webflow', 'WordPress', 'HubSpot',
+    'Git', 'Docker', 'Figma', 'Retool', 'Vercel'
   ], []);
 
   useEffect(() => {

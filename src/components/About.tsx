@@ -12,17 +12,17 @@ const About: React.FC = () => {
     {
       icon: <User className="w-6 h-6 text-accent-blue" />,
       title: 'Experience',
-      description: 'Years of building complex web apps with modern technologies.',
+      description: '1+ year building production web apps across frontend and backend.',
     },
     {
       icon: <Code2 className="w-6 h-6 text-accent-purple" />,
-      title: 'Tech Stack',
-      description: 'Expertise in React, Next.js, TypeScript, and Tailwind CSS.',
+      title: 'Full-Stack',
+      description: 'React, Next.js, Express.js, REST APIs, and database integration.',
     },
     {
       icon: <Rocket className="w-6 h-6 text-accent-blue" />,
-      title: 'Performance',
-      description: 'Focus on optimized, scalable, and high-performance code.',
+      title: 'Production',
+      description: 'Authentication, role-based authorization, and real deployments.',
     },
     {
       icon: <Heart className="w-6 h-6 text-accent-purple" />,
@@ -42,12 +42,14 @@ const About: React.FC = () => {
             <span className="text-gradient">Experiences</span>
           </h3>
           <p className="text-gray-400 text-lg leading-relaxed mb-6">
-            Frontend Developer with experience building production-grade responsive web applications using JavaScript, 
-            React, Next.js, and Tailwind CSS. Strong focus on performance, scalability, and clean UI architecture.
+            Developer with 1+ year of professional experience building web applications using React.js, Next.js,
+            JavaScript, and Tailwind CSS. Experienced in responsive web development, full-stack applications, REST APIs,
+            CMS-driven websites, authentication, database integration, and production deployments.
           </p>
           <p className="text-gray-400 text-lg leading-relaxed">
-            I love pushing the boundaries of web development by integrating physics, 3D elements, and smooth animations 
-            to create memorable user interactions.
+            I love pushing the boundaries of web development by integrating physics, 3D elements, and smooth animations
+            to create memorable user interactions — while collaborating closely with cross-functional teams on both
+            frontend and backend solutions.
           </p>
         </div>
 
